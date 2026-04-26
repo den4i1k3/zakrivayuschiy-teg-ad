@@ -23,7 +23,8 @@ html {
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
-  block-size: 100dvb;
+  transform: none;
+  block-size: min(960px, 100dvb);
   background-image: var(--bg-lines), var(--bg-lines-vertical), var(--bg-main);
   background-repeat: repeat, repeat, no-repeat;
   background-position: 0 0, 0 0, 0 0;
