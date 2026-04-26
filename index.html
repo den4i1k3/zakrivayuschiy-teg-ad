@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +12,530 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <svg class="visually-hidden" aria-hidden="true">
+      <use href="./svg/sprite.svg#floppy"></use>
+    </svg>
+
+    <header class="header content">
+      <div class="header__inner">
+        <p class="logo">&lt;/HTML&gt;</p>
+        <h1 class="title">закрывающий тег</h1>
+      </div>
+    </header>
+
+    <main class="content main">
+      <section class="cards" aria-label="Карточки">
+        <article class="card">
+          <h2 class="card__title">Фритрек по теме</h2>
+          <div class="card__image-container">
+            <span class="card__label">mood</span>
+            <img
+              class="card__image card__image_filter_grayscale"
+              src="./images/card-1.png"
+              alt="Иллюстрация карточки 1"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Место, чтобы остановиться, подумать и написать, что вы чувствуете
+              в этой точке пути.
+            </p>
+            <p class="card__text">
+              Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Параграф и мысль</h2>
+          <div class="card__image-container">
+            <span class="card__label">flow</span>
+            <img
+              class="card__image card__image_filter_sepia"
+              src="./images/card-2.png"
+              alt="Иллюстрация карточки 2"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Иногда полезно сделать паузу и посмотреть на прогресс чуть
+              со стороны.
+            </p>
+            <p class="card__text">
+              В процессе учёбы меняется не только проект — меняется взгляд на
+              детали.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Эффекты и привычки</h2>
+          <div class="card__image-container">
+            <span class="card__label">spark</span>
+            <img
+              class="card__image card__image_filter_hue"
+              src="./images/card-3.png"
+              alt="Иллюстрация карточки 3"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Хочется, чтобы интерфейс реагировал на внимание — без лишнего
+              шума.
+            </p>
+            <p class="card__text">
+              Маленькие микроанимации создают ощущение живого объекта.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Маски и тени</h2>
+          <div class="card__image-container">
+            <span class="card__label">blend</span>
+            <img
+              class="card__image card__image_filter_invert"
+              src="./images/card-4.png"
+              alt="Иллюстрация карточки 4"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Важно помнить о доступности: фокус должен быть заметным, но
+              аккуратным.
+            </p>
+            <p class="card__text">
+              И да — всегда проверяю, как это выглядит на клавиатуре.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Фильтры и эмоции</h2>
+          <div class="card__image-container">
+            <span class="card__label">noir</span>
+            <img
+              class="card__image card__image_filter_blur"
+              src="./images/card-5.png"
+              alt="Иллюстрация карточки 5"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              CSS-фильтры позволяют усилить настроение — главное, не переборщить.
+            </p>
+            <p class="card__text">
+              Мне нравится, когда визуальная часть поддерживает смысл текста.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Сетка и фон</h2>
+          <div class="card__image-container">
+            <span class="card__label">grid</span>
+            <img
+              class="card__image card__image_filter_contrast"
+              src="./images/card-6.png"
+              alt="Иллюстрация карточки 6"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Фон из нескольких градиентов создаёт текстуру, а не просто заливку.
+            </p>
+            <p class="card__text">
+              Люблю, когда “пиксельность” аккуратно поддерживает стиль.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Ритм и текст</h2>
+          <div class="card__image-container">
+            <span class="card__label">pace</span>
+            <img
+              class="card__image card__image_filter_saturate"
+              src="./images/card-7.png"
+              alt="Иллюстрация карточки 7"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Короткие строки легче читаются, длинные — лучше держать ритм.
+            </p>
+            <p class="card__text">
+              Поэтому отступы и ширина контента тут — не случайность.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Комбо-фильтр</h2>
+          <div class="card__image-container">
+            <span class="card__label">multi</span>
+            <img
+              class="card__image card__image_filter_multi"
+              src="./images/card-8.png"
+              alt="Иллюстрация карточки 8"
+              loading="lazy"
+            />
+          </div>
+          <div class="card__content">
+            <p class="card__text">
+              Здесь фильтр составной: несколько эффектов, чтобы почувствовать разницу.
+            </p>
+            <p class="card__text">
+              И чтобы точно выполнить требование про “хотя бы один множественный”.
+            </p>
+          </div>
+          <div class="card__actions">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
+              <svg
+                class="like-icon"
+                width="39"
+                height="36"
+                viewBox="0 0 39 36"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g class="heart">
+                  <path
+                    class="contour"
+                    fill="var(--contour-color)"
+                    d="M12 0H27V3H30V6H33V12H30V15H27V18H24V21H21V24H18V21H15V18H12V15H9V12H6V6H9V3H12V0Z"
+                  />
+                  <path
+                    class="main-body"
+                    fill="var(--main-body-color)"
+                    d="M12 6H27V9H30V12H27V15H24V18H21V21H18V18H15V15H12V12H9V9H12V6Z"
+                  />
+                  <path
+                    class="core"
+                    fill="var(--core-color)"
+                    d="M15 9H24V12H27V15H24V18H21V15H18V12H15V9Z"
+                  />
+                </g>
+                <g class="sparks" fill="var(--animation-fill-color)">
+                  <path d="M18 0H21V6H18V0Z" />
+                  <path d="M0 15H6V18H0V15Z" />
+                  <path d="M33 15H39V18H33V15Z" />
+                  <path d="M6 3H9V6H6V3Z" />
+                  <path d="M30 3H33V6H30V3Z" />
+                </g>
+              </svg>
+            </button>
+            <button class="card__like-button button" type="button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <div class="save">
+        <button class="button save__button" type="button" id="save-button">
+          <svg class="button__icon" width="21" height="21" aria-hidden="true">
+            <use href="./svg/sprite.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </main>
+
+    <dialog class="dialog" id="save-dialog">
+      <form class="dialog__inner" method="dialog">
+        <div class="dialog__content">
+          <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
+            <use href="./svg/sprite.svg#floppy"></use>
+          </svg>
+          <p class="dialog__text">вставьте дискету, чтобы продолжить</p>
+        </div>
+        <button class="button dialog__button" type="submit">
+          <span class="button__text">ок</span>
+        </button>
+      </form>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
+    <script src="./scripts/dialog.js"></script>
   </body>
 </html>

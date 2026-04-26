@@ -1,1 +1,50 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --accent-font: 'PressStart2P', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --page-bg: #fff;
+  --text-color: #000;
+  --accent-color: #000;
+
+  --content-inline-size: clamp(23.4375rem, 30vw, 43.75rem);
+
+  --header-block-padding: clamp(7.5rem, 6.5vw, 8.5rem);
+  --header-logo-size: clamp(3.0625rem, 3.2vw, 4.0625rem);
+  --header-title-size: clamp(0.875rem, 1.2vw, 1.4375rem);
+
+  --card-title-weight: 700;
+  --card-text-weight: 400;
+
+  --border-width: 2px;
+  --shadow-offset: 2px;
+
+  --label-stroke-color: #fff;
+
+  --contour-color: #000;
+  --main-body-color: none;
+  --core-color: none;
+  --animation-fill-color: #ff0000;
+
+  --button-fill: #000;
+  --focus-shadow: 2px 2px 0 0 #000;
+
+  --bg-lines: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  );
+  --bg-lines-vertical: repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  );
+  --bg-main: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --dialog-overlay: rgb(0 0 0 / 0.75);
+}
+
+@media (width <= 375px) {
+  :root {
+    --content-inline-size: 100%;
+  }
+}
